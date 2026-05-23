@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.eShopWeb;
 using Microsoft.eShopWeb.PublicApi.UserManagementEndpoints.Models;
@@ -27,7 +27,7 @@ public class UserGetRolesByIdEndpointTest
         var userRolesList = userRoles.FromJson<GetUserRolesResponse>();
         Assert.IsNotNull(userRolesList);
         Assert.IsNotNull(userRolesList.Roles);
-        Assert.IsTrue(userRolesList.Roles.Count > 0);
+        Assert.IsNotEmpty(userRolesList.Roles);
     }
 
     [TestMethod]

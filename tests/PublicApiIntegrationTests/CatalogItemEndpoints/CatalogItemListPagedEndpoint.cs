@@ -1,4 +1,4 @@
-﻿using Microsoft.eShopWeb;
+using Microsoft.eShopWeb;
 using Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
@@ -48,7 +48,7 @@ public class CatalogItemListPagedEndpoint
         Assert.AreEqual(totalExpected, model2!.CatalogItems.Count());
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("catalog-items")]
     [DataRow("catalog-brands")]
     [DataRow("catalog-types")]

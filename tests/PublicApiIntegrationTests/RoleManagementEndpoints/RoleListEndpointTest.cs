@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.eShopWeb;
 using Microsoft.eShopWeb.PublicApi.RoleManagementEndpoints;
@@ -39,6 +39,6 @@ public class RoleListEndpointTest
         var model = stringResponse.FromJson<RoleListResponse>();
         Assert.IsNotNull(model);
         Assert.IsNotNull(model.Roles);
-        Assert.IsTrue(model.Roles.Count > 0);
+        Assert.IsNotEmpty(model.Roles);
     }
 }

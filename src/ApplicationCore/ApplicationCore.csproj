@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>	
 		<RootNamespace>Microsoft.eShopWeb.ApplicationCore</RootNamespace>
@@ -10,8 +10,7 @@
 		<PackageReference Include="Ardalis.Result" />
 		<PackageReference Include="Ardalis.Specification" />
     <PackageReference Include="NimblePros.SharedKernel" />
-    <PackageReference Include="System.Security.Claims" />
-		<PackageReference Include="System.Text.Json" />
+
 	</ItemGroup>
 
 	<ItemGroup>
